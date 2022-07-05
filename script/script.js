@@ -1,4 +1,4 @@
-// ---------------------- Ejemplo con Objetos, Arrays, Metodos ------------------------------------------- //
+// ---------------------- Ejemplo con Objetos, Arrays, Metodos ------------------------------------------- //  
 const nombreUsuario = prompt("¿Cual es tu nombre?")
 alert(`Hola ${nombreUsuario}, debes ingresar los datos de 3 cuentas para comenzar.`)
 
@@ -51,15 +51,15 @@ const presupuestoUsuario = () => {
 const gasto = () => {
   do {
     do {
-    opcion = Number(prompt(`¿En que cuenta realizaste tu gasto ${nombreUsuario}?
+    opcionEgreso = Number(prompt(`¿En que cuenta realizaste tu gasto ${nombreUsuario}?
   1- Cuenta ${primerBilletera.nombre}
   2- Cuenta ${segundaBilletera.nombre}
   3- Cuenta ${tercerBilletera.nombre}
   4- Salir
   `))
-    } while (isNaN(opcion))
+    } while (isNaN(opcionEgreso))
     egreso = Number(prompt("¿Cuanto dinero gastaste?"))
-    switch (opcion) {
+    switch (opcionEgreso) {
       case 1:
         primerBilletera.saldo -= egreso;
         break
@@ -88,7 +88,6 @@ const consulta = () => {
   /////Cuenta en Total: ${billeteraTotal}/////`)
 
 }
-
 do {
  opciones = Number(prompt(`¿Que deseas hacer ${nombreUsuario}?
   1- Recargar saldo en una billetera.

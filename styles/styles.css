@@ -1,0 +1,62 @@
+/* Colores a usar: 
+F6F4E6
+FDDB3A
+52575D
+41444B
+https://colorhunt.co/palette/f6f4e6fddb3a52575d41444b */
+.tituloIndex{
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 10px;
+    background-color: rgba(180, 180, 180, 0.801);
+    padding: 10px;
+    text-align: center;
+}
+.formularioIngreso{
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 30%;
+    border-radius: 10px;
+    background-color: rgba(180, 180, 180, 0.801);
+    position: absolute;
+}
+.formularioRegistro{
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 30%;
+    border-radius: 10px;
+    background-color: rgba(180, 180, 180, 0.801);
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+.bodyIndex{
+    background-image: url("https://images.pexels.com/videos/5466776/accounting-money-tax-taxes-5466776.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500;");
+}
+.iconoLogo{
+    width: 100px;
+    height: 100px;
+}
+.navbar-nav{
+    margin-left: 80px;
+}
+.registro{
+    margin-left: 400px;
+}
+.bodyMain{
+    display: grid;
+}
+
+.formularioRegistro.active{
+    opacity: 1;
+    visibility: visible;
+}
+.formularioIngreso.active{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+.tituloForm{
+    text-align: center;
+}
